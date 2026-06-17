@@ -7,7 +7,6 @@
   --background: #fff;
   --surface: #f8f7f5;
   --border: #e8e4df;
-  --success: #1f6b4f;
   --shadow: 0 24px 64px rgba(40, 24, 27, 0.1);
   --serif: "Playfair Display", Georgia, serif;
   --sans: "Inter", Arial, sans-serif;
@@ -95,33 +94,6 @@ h3 {
   text-decoration: none;
   line-height: 1;
 }
-.brand-mark {
-  display: grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  border: 1px solid var(--primary);
-  color: var(--primary);
-  font-family: var(--serif);
-  font-size: 1.7rem;
-  font-weight: 700;
-}
-.brand strong,
-.brand small {
-  display: block;
-}
-.brand strong {
-  font-family: var(--serif);
-  font-size: 1.38rem;
-  letter-spacing: 0.02em;
-}
-.brand small {
-  text-transform: uppercase;
-  font-size: 0.59rem;
-  letter-spacing: 0.23em;
-  margin-top: 0.3rem;
-  color: var(--muted);
-}
 .nav-link {
   font-size: 0.88rem;
   font-weight: 600;
@@ -159,12 +131,6 @@ h3 {
   --bs-btn-hover-border-color: var(--primary-dark);
   --bs-btn-active-bg: var(--primary-dark);
   --bs-btn-active-border-color: var(--primary-dark);
-}
-.btn-outline-primary {
-  --bs-btn-color: var(--primary);
-  --bs-btn-border-color: var(--primary);
-  --bs-btn-hover-bg: var(--primary);
-  --bs-btn-hover-border-color: var(--primary);
 }
 .btn-lg {
   font-size: 0.95rem;
@@ -207,35 +173,9 @@ h3 {
   line-height: 1.45;
   margin: 0 0 1rem;
 }
-.hero-lead strong {
-  color: var(--primary);
-}
 .hero-copy {
   color: var(--muted);
   max-width: 640px;
-}
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin: 1.75rem 0;
-}
-.trust-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem 1.25rem;
-  padding: 0;
-  margin: 1.75rem 0 0;
-  list-style: none;
-  color: #454545;
-  font-size: 0.78rem;
-  font-weight: 600;
-}
-.trust-list li:before {
-  content: "✓";
-  color: var(--success);
-  font-weight: 800;
-  margin-right: 0.4rem;
 }
 .hero-visual {
   position: relative;
@@ -255,43 +195,10 @@ h3 {
   border-radius: 2px;
   box-shadow: var(--shadow);
 }
-.hero-note {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  left: 0;
-  bottom: 0;
-  background: #fff;
-  padding: 1rem 1.2rem;
-  box-shadow: 0 12px 36px rgba(40, 24, 27, 0.14);
-}
-.note-icon {
-  display: grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background: var(--primary-soft);
-  color: var(--primary);
-  font-weight: 800;
-}
-.hero-note strong,
-.hero-note small {
-  display: block;
-}
-.hero-note strong {
-  font-size: 0.86rem;
-}
-.hero-note small {
-  font-size: 0.7rem;
-  color: var(--muted);
-}
 .section-heading {
   max-width: 750px;
 }
-.section-heading p,
-.section-intro {
+.section-heading p {
   color: var(--muted);
   font-size: 1.03rem;
 }
@@ -311,18 +218,6 @@ h3 {
   box-shadow: 0 18px 46px rgba(40, 24, 27, 0.08);
   border-color: rgba(121, 28, 46, 0.22);
 }
-.icon-box {
-  display: grid;
-  place-items: center;
-  width: 48px;
-  height: 48px;
-  margin-bottom: 1.3rem;
-  color: var(--primary);
-  background: var(--primary-soft);
-  font-family: var(--serif);
-  font-size: 1rem;
-  font-weight: 700;
-}
 .info-card h3 {
   font-family: var(--serif);
   font-size: 1.25rem;
@@ -336,120 +231,11 @@ h3 {
   font-size: 0.75rem;
   color: #777;
 }
-.checklist {
-  padding: 0;
-  margin: 2rem 0;
-  list-style: none;
-}
-.checklist li {
-  position: relative;
-  padding: 0.9rem 0 0.9rem 2.6rem;
-  border-bottom: 1px solid var(--border);
-  font-weight: 600;
-}
-.checklist li:before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  top: 0.82rem;
-  display: grid;
-  place-items: center;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: var(--primary-soft);
-  color: var(--primary);
-  font-size: 0.78rem;
-}
-.recovery-card {
-  position: relative;
-  overflow: hidden;
-  padding: clamp(2.2rem, 6vw, 4rem);
-  color: #fff;
-  background: var(--primary);
-  box-shadow: var(--shadow);
-}
-.recovery-card:after {
-  content: "25%";
-  position: absolute;
-  right: -1rem;
-  bottom: -3rem;
-  color: rgba(255, 255, 255, 0.055);
-  font-family: var(--serif);
-  font-size: 10rem;
-  font-weight: 700;
-}
-.recovery-label {
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: #edcbd1;
-}
-.recovery-card h2 {
-  font-size: clamp(2.2rem, 5vw, 3.5rem);
-}
-.recovery-card p {
-  position: relative;
-  z-index: 1;
-  font-size: 1.08rem;
-  color: #f4e9eb;
-}
-.recovery-divider {
-  width: 48px;
-  height: 2px;
-  margin: 1.5rem 0;
-  background: #d8a8b1;
-}
 .video-frame {
   overflow: hidden;
   border: 8px solid #fff;
   background: #1c1617;
   box-shadow: var(--shadow);
-}
-.process-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0;
-  padding: 0;
-  list-style: none;
-  counter-reset: process;
-}
-.process-list li {
-  position: relative;
-  padding: 0 1.4rem;
-  text-align: center;
-}
-.process-list li:not(:last-child):after {
-  content: "";
-  position: absolute;
-  top: 26px;
-  left: 65%;
-  width: 70%;
-  height: 1px;
-  background: var(--border);
-}
-.process-list span {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  place-items: center;
-  width: 54px;
-  height: 54px;
-  margin: 0 auto 1.3rem;
-  border: 1px solid var(--primary);
-  border-radius: 50%;
-  background: #fff;
-  color: var(--primary);
-  font-family: var(--serif);
-  font-weight: 700;
-}
-.process-list h3 {
-  font-family: var(--serif);
-  font-size: 1.15rem;
-}
-.process-list p {
-  font-size: 0.86rem;
-  color: var(--muted);
 }
 .form-section {
   background: linear-gradient(to top, #fff 22%, var(--surface) 22%);
@@ -512,59 +298,12 @@ h3 {
 .form-disclaimer a {
   color: var(--primary);
 }
-.values-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-}
-.value-item {
-  min-height: 150px;
-  padding: 1.7rem;
-  border: 1px solid var(--border);
-  background: #fff;
-}
-.value-item span {
-  color: var(--primary);
-  font-family: var(--serif);
-  font-size: 1.7rem;
-}
-.value-item h3 {
-  margin: 1rem 0 0;
-  font-family: var(--serif);
-  font-size: 1.16rem;
-}
 .text-link {
   display: inline-block;
   color: var(--primary);
   font-weight: 700;
   text-decoration: none;
   border-bottom: 1px solid rgba(121, 28, 46, 0.3);
-}
-.accordion {
-  border-top: 1px solid var(--border);
-}
-.accordion-item {
-  background: transparent;
-  border-color: var(--border);
-}
-.accordion-button {
-  padding: 1.3rem 0.25rem;
-  background: transparent !important;
-  box-shadow: none !important;
-  color: var(--text) !important;
-  font-weight: 700;
-}
-.accordion-button:not(.collapsed) {
-  color: var(--primary) !important;
-}
-.accordion-button:focus {
-  outline: 2px solid var(--primary);
-  outline-offset: 3px;
-}
-.accordion-body {
-  padding: 0.15rem 0.25rem 1.5rem;
-  color: var(--muted);
-  font-size: 0.92rem;
 }
 .final-cta {
   position: relative;
@@ -611,13 +350,6 @@ h3 {
 }
 .brand-light {
   color: #fff;
-}
-.brand-light .brand-mark {
-  color: #fff;
-  border-color: #815963;
-}
-.brand-light small {
-  color: #a99fa1;
 }
 .footer-copy {
   max-width: 310px;
@@ -732,13 +464,6 @@ h3 {
     max-width: 680px;
     margin: auto;
   }
-  .process-list {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem 0;
-  }
-  .process-list li:nth-child(2):after {
-    display: none;
-  }
   .form-intro,
   .form-panel {
     padding: 2.5rem;
@@ -760,50 +485,8 @@ h3 {
   .hero {
     padding-top: 44px;
   }
-  .hero-actions .btn {
-    width: 100%;
-  }
-  .trust-list {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
   .hero-visual {
     padding: 0 0 18px 18px;
-  }
-  .hero-note {
-    padding: 0.8rem 1rem;
-  }
-  .process-list {
-    grid-template-columns: 1fr;
-    gap: 1.7rem;
-  }
-  .process-list li {
-    display: grid;
-    grid-template-columns: 54px 1fr;
-    gap: 1rem;
-    text-align: left;
-    padding: 0;
-  }
-  .process-list li:not(:last-child):after {
-    top: 54px;
-    left: 27px;
-    width: 1px;
-    height: calc(100% + 1.7rem);
-  }
-  .process-list li:nth-child(2):after {
-    display: block;
-  }
-  .process-list span {
-    margin: 0;
-  }
-  .process-list p {
-    margin: 0;
-  }
-  .values-grid {
-    grid-template-columns: 1fr;
-  }
-  .value-item {
-    min-height: auto;
   }
   .footer-bottom {
     display: block;
