@@ -452,7 +452,7 @@ h3 {
   color: var(--muted);
 }
 .form-section {
-  background: linear-gradient(to bottom, #fff 22%, var(--surface) 22%);
+  background: linear-gradient(to top, #fff 22%, var(--surface) 22%);
 }
 .form-shell {
   overflow: hidden;
